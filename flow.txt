@@ -1,0 +1,14 @@
+search_main()
+this function searches in a file for a list of records that
+encludes the string  
+
+prompt for a string and store it in a variable 
+
+loop through the file and search for given string 
+
+    if found
+    print line 
+    else
+    show "failed search"
+    write to log 
+    go back to menu

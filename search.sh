@@ -1,4 +1,6 @@
 #!/bin/bash
+source ./funcs.sh
+
 
 : '
 
@@ -13,11 +15,11 @@ loop through the file and search for given string
     show "failed search"
     write to log 
     go back to menu
-
-'
+ '
 
 search_main(){
-sort $1 > sorted_file.db
+   input_file
+sort $file > sorted_file.db
 read -p "search for string : " str
 flag=0
 while IFS=' ' read line; do
@@ -31,16 +33,8 @@ done < sorted_file.db
 
 rm sorted_file.db
 
-
-
-
-#Update log file 
- formatted_date=$(date +'%d/%m/%Y %H:%M:%S')
-if [[ $flag -eq 1 ]]; then
-    echo "$formatted_date search success " >> logfile.txt   
-else 
-    echo "failed search"
-    echo "$formatted_date search failed " >> logfile.txt  
-fi
+update_log
 
 }
+
+search_main 

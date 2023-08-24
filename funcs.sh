@@ -48,5 +48,4 @@ echo $line_count
 
 }
 
-searcher
 

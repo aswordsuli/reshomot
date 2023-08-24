@@ -1,5 +1,4 @@
 #!/bin/bash
-source ./functions.sh
 
 main_menu() {
     echo "Welcome $USER!"
@@ -9,14 +8,35 @@ main_menu() {
     echo "3. Search Records"
     echo "4. Update Record Name"
     echo "5. Update Record Quantity"
-    echo "6. Display Records"
-    echo "7. Display Total Quantity"
+    echo "6. Display Total Record Quantity"
+    echo "7. Display Records"
     echo "8. Exit"
     read -p "Enter your choice (1-8): " choice
 }
 
+display_records() {
+    echo "Record Collection:"
+    while IFS= read -r record; do
+        echo "$record"
+    done < "records.txt"
+}
 
+display_records_sum() {
+    total_records=$(awk -F, '{sum+=$2} END {print sum}' "records.txt")
+    if [ -s "records.txt" ]; then
+    	echo "Total records: $total_records"
+    else
+   	 echo "No records to display, please add and try again."
+    fi
+}
 
+print_sorted_records() {
+    if [ -s "records.txt" ]; then
+        sort records.txt
+    else
+        echo "No records to display, please add and try again."
+    fi
+}
 
 while true; do
     main_menu
@@ -26,11 +46,10 @@ while true; do
         3) search_main ;;
         4) update_name ;;
         5) update_quantity ;;
-        6) display_records ;;
-        7) display_total_quantity ;;
-        8)
-            # Save records to file and exit - check how to set files as same names syntax?
-            ;;
+        6) display_records_sum ;;
+        7) print_sorted_records ;; 
+        8) exit ;;
         *) echo "Invalid choice. Please select 1-8." ;;
     esac
 done
+

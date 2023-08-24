@@ -15,7 +15,9 @@ loop through the file and search for given string
     go back to menu
 
 '
-sort testfile.db > sorted_file.db
+
+search_main(){
+sort $1 > sorted_file.db
 read -p "search for string : " str
 flag=0
 while IFS=' ' read line; do
@@ -40,3 +42,5 @@ else
     echo "failed search"
     echo "$formatted_date search failed " >> logfile.txt  
 fi
+
+}

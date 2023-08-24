@@ -1,3 +1,5 @@
+
+
 search_main()
 this function searches in a file for a list of records that
 encludes the string  
@@ -12,3 +14,42 @@ loop through the file and search for given string
     show "failed search"
     write to log 
     go back to menu
+
+
+    ______________________________________-
+
+    add_main()
+
+    this functions adds a entry or updates existing entry 
+
+    if more than one entry is found then 
+    display a menu with names of the record of entries 
+
+    select a record by number 
+
+    if entries are not found then add the entry to the end 
+    of the file list
+
+    if entry was found icrease by one 
+
+    at the end display a success message and write to log 
+
+    promt menu again 
+
+
+    ________________________________________________________________
+
+
+    delete_main() 
+
+    this functions deletes a record or updates existing entry 
+
+    if we found more than one record display a menu with 
+    names and records 
+
+    select a record name 
+
+    decrese  the record
+
+
+

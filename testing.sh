@@ -26,4 +26,8 @@ Motty
 echo "nadin"
 =======
 #____4
+<<<<<<< HEAD
 >>>>>>> motty
+=======
+>>>>>>> main
+>>>>>>> main

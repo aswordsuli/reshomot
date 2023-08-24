@@ -13,9 +13,15 @@ main_menu() {
     echo "7. Display Total Quantity"
     echo "8. Exit"
     read -p "Enter your choice (1-8): " choice
+    
 }
-
-
+#show list - watch for text.txt
+display_records() {
+    echo "Record Collection:"
+    while IFS= read -r record; do
+        echo "$record"
+    done < "text.txt"
+}
 
 #main - check if works using fun?
 while true; do

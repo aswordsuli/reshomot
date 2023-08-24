@@ -1,5 +1,5 @@
 #!/bin/bash
-source ./funcs.sh
+source ./helpers.sh
 
 
 : '

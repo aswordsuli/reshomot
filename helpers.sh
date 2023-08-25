@@ -16,20 +16,20 @@ input_file() {
 
 update_log(){
 #Update log file 
+operation=$1
  formatted_date=$(date +'%d/%m/%Y %H:%M:%S')
 if [[ $flag -eq 1 ]]; then
-    echo "$formatted_date search success " >> logfile.txt   
-    search_main
+    echo "$formatted_date $operation success " >> logfile.txt
 else 
     echo "failed search"
-    echo "$formatted_date search failed " >> logfile.txt  
+    echo "$formatted_date $operation failed " >> logfile.txt  
 fi
 }
 
 searcher(){
 
-  input_file
-sort $file > sorted_file.db
+  #input_file
+sort records.txt > sorted_file.db
 read -p "search for string : " str
 flag=0
 while IFS=' ' read line; do

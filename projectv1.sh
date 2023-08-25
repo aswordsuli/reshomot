@@ -43,21 +43,17 @@ done < sorted_file.db
 
 rm sorted_file.db
 
-update_log
+write_to_log
 
 }
 
-update_log(){
-#Update log file 
- formatted_date=$(date +'%d/%m/%Y %H:%M:%S')
-if [[ $flag -eq 1 ]]; then
-    echo "$formatted_date search success " >> logfile.txt   
-    search_main
-else 
-    echo "failed search"
-    echo "$formatted_date search failed " >> logfile.txt  
-fi
+write_to_log() {
+    local event="$1"
+    local result="$2"
+    local timestamp=$(date +"%m/%d/%Y %T")
+    echo "$timestamp $event $result" >> logfile.txt
 }
+
 
 #function to display line by line
 display_records() {
@@ -72,20 +68,23 @@ display_records_sum() {
     total_records=$(awk -F, '{sum+=$2} END {print sum}' "records.txt")
     if [ -s "records.txt" ]; then
     	echo "Total records: $total_records"
+    	write_to_log "PrintAmount" $total_records
     else
-   	 echo "No records to display, please add and try again."
+   	echo "No records to display, please add and try again."
+   	write_to_log "PrintAmount" $total_records
     fi
-    #update_log
 }
 
 #function to display content of file in abc sorting
 print_sorted_records() {
+    sorted_content=$(sort "records.txt")
     if [ -s "records.txt" ]; then
         sort records.txt
+        write_to_log "PrintAll" $sorted_content
     else
         echo "No records to display, please add and try again."
+        write_to_log "PrintAll" $sorted_content
     fi
-    #update_log
 }
 
 while true; do

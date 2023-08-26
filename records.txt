@@ -3,3 +3,7 @@ yellow rectangle,5
 kattey perry,3
 dark aaa,7
 favorite white,0
+the white,99
+while the light,9
+soooo fuckin white,8
+

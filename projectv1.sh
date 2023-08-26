@@ -28,9 +28,7 @@ while true; do
         5) update_quantity ;;
         6) display_records ;;
         7) display_total_quantity ;;
-        8)
-            # Save records to file and exit - check how to set files as same names syntax?
-            ;;
+        8) exit 0            ;;
         *) echo "Invalid choice. Please select 1-8." ;;
     esac
 done

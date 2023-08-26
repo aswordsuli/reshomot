@@ -110,7 +110,7 @@ if [ "$opt" ];then
 fi
 break
 done
-update_log "update"
+update_log "updateName"
 echo -n > find.txt  
 }
 
@@ -134,7 +134,7 @@ if [ "$opt" ];then
 fi
 break
 done
-update_log "update"
+update_log "updateAmount"
 echo -n > find.txt
 }
 

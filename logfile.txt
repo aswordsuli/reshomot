@@ -1,2 +1,15 @@
-25/08/2023 14:13:04 search success 
-25/08/2023 14:13:09 Delete success 
+26/08/2023 18:12:49 PrintAll dark side of the moon,14
+26/08/2023 18:12:49 PrintAll yellow rectangle,5
+26/08/2023 18:12:49 PrintAll into the dark,5
+26/08/2023 18:12:49 PrintAll kattey perry,3
+26/08/2023 18:12:49 PrintAll dark aaa,22
+26/08/2023 18:12:49 PrintAll visit the dark,8
+26/08/2023 18:12:49 PrintAll favorite white,0
+26/08/2023 18:15:33 PrintAmount 57
+27/08/2023 01:31:50 PrintAll dark side of the moon,14
+27/08/2023 01:31:50 PrintAll yellow rectangle,5
+27/08/2023 01:31:50 PrintAll into the dark,5
+27/08/2023 01:31:50 PrintAll kattey perry,3
+27/08/2023 01:31:50 PrintAll dark aaa,22
+27/08/2023 01:31:50 PrintAll visit the dark,8
+27/08/2023 01:31:50 PrintAll favorite white,0

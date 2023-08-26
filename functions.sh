@@ -156,7 +156,7 @@ else
      flag=0
 fi
 
-update_log PrintAmount 
+update_log "PrintAmount" 
 }
 display_records(){
 if ! [[ -s records.txt ]];then
@@ -168,7 +168,7 @@ while IFS= read -r line; do
     echo $line
 done < sorted.txt
 flag=1
-update_log PrintAll
+update_log "PrintAll"
 }
 
 

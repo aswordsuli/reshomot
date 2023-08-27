@@ -18,3 +18,5 @@ Bruno Mars, 58
 Billie Eilish, 10
 Drake, 87
 Adele, 24
+nadin,80
+records.txt,shenhav

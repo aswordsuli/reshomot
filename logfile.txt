@@ -1,94 +1,32 @@
-08/25/2023 13:07:32 PrintAll Success
-08/25/2023 13:11:24 PrintAll Success
-08/25/2023 13:16:17 PrintAmount display_records_sum
-08/25/2023 13:16:19 PrintAll print_sorted_records
-08/25/2023 13:16:20 PrintAmount display_records_sum
-08/25/2023 13:16:21 PrintAll print_sorted_records
-08/25/2023 13:18:20 PrintAll cat
-08/25/2023 13:19:06 PrintAll 
-08/25/2023 13:19:07 PrintAmount display_records_sum
-08/25/2023 13:20:07  
-08/25/2023 13:20:11  
-08/25/2023 13:20:12  
-08/25/2023 13:20:13 PrintAmount display_records_sum
-08/25/2023 13:20:13  
-08/25/2023 13:20:14  
-08/25/2023 13:20:14 PrintAmount display_records_sum
-08/25/2023 13:20:15  
-08/25/2023 13:20:15 PrintAmount display_records_sum
-08/25/2023 13:20:16  
-08/25/2023 13:22:57 PrintAmount 717
-08/25/2023 13:22:57 PrintAmount 717
-08/25/2023 13:22:57 PrintAmount 717
-08/25/2023 13:22:58 PrintAmount 717
-08/25/2023 13:22:58 PrintAmount 717
-08/25/2023 13:22:58 PrintAmount 717
-08/25/2023 13:22:58 PrintAmount 717
-08/25/2023 13:22:59 PrintAmount 717
-08/25/2023 13:26:00 PrintAmount 717
-08/25/2023 13:26:00 PrintAll A,
-08/25/2023 13:26:01 PrintAmount 717
-08/25/2023 13:26:01 PrintAll A,
-08/25/2023 13:26:02 PrintAmount 717
-08/25/2023 13:26:02 PrintAll A,
-08/25/2023 13:26:03 PrintAmount 717
-08/25/2023 13:26:03 PrintAll A,
-08/25/2023 13:27:40 PrintAmount 717
-08/25/2023 13:27:41 PrintAll A,
-08/25/2023 13:27:41 PrintAmount 717
-08/25/2023 13:27:46 PrintAll A,
-08/25/2023 13:27:46 PrintAll A,
-08/25/2023 13:27:46 PrintAll A,
-08/25/2023 13:27:47 PrintAll A,
-08/25/2023 13:28:56 PrintAll A,
-08/25/2023 13:28:57 PrintAll A,
-08/25/2023 13:28:57 PrintAll A,
-08/25/2023 13:28:57 PrintAll A,
-08/25/2023 13:28:57 PrintAll A,
-08/25/2023 13:28:58 PrintAll A,
-08/25/2023 13:30:03 PrintAll A,
-08/25/2023 13:30:04 PrintAll A,
-08/25/2023 13:30:04 PrintAll A,
-08/25/2023 13:30:04 PrintAll A,
-08/25/2023 13:30:05 PrintAll A,
-08/25/2023 13:34:03 PrintAmount:
-717
-
-08/25/2023 13:34:03 PrintAll:
-A,
-
-08/25/2023 13:34:04 PrintAll:
-A,
-
-08/25/2023 13:34:04 PrintAll:
-A,
-
-08/25/2023 13:34:05 PrintAll:
-A,
-
-08/25/2023 13:34:54 PrintAmount:
-717
-
-08/25/2023 13:34:55 PrintAmount:
-717
-
-08/25/2023 13:34:55 PrintAmount:
-717
-
-08/25/2023 13:34:55 PrintAmount:
-717
-
-08/25/2023 13:34:56 PrintAmount:
-717
-
-08/25/2023 13:34:56 PrintAmount:
-717
-
-08/25/2023 13:37:07 PrintAmount 717
-08/25/2023 13:37:07 PrintAll A,
-08/25/2023 13:37:08 PrintAmount 717
-08/25/2023 13:37:09 PrintAll A,
-08/25/2023 13:37:09 PrintAmount 717
-08/25/2023 13:37:10 PrintAll A,
-08/25/2023 13:37:11 PrintAmount 717
-08/25/2023 13:37:13 PrintAll A,
+08/26/2023 10:39:26 PrintAmount 717
+08/26/2023 10:39:27 PrintAll A,
+08/26/2023 10:39:27 PrintAmount 717
+08/26/2023 10:39:28 PrintAll A,
+08/26/2023 10:39:28 PrintAmount 717
+08/26/2023 11:07:27 PrintAmount 717
+08/26/2023 11:14:59 PrintAmount 717
+08/26/2023 11:40:45 PrintAll A, 5 AA, 90 AB, 1 AB, 80 AC, 1 AD, 6 Adele, 24 Ariana Grande, 65 B, 8 BB, 2 Beyoncé, 18 Billie Eilish, 10 Bruno Mars, 58 C, 10 CA, 10 Drake, 87 Ed Sheeran, 76 Justin Bieber, 91 Rihanna, 33 Taylor Swift, 42
+08/26/2023 11:46:32 PrintAll A, 5 AA, 90 AB, 1 AB, 80 AC, 1 AD, 6 Adele, 24 Ariana Grande, 65 B, 8 BB, 2 Beyoncé, 18 Billie Eilish, 10 Bruno Mars, 58 C, 10 CA, 10 Drake, 87 Ed Sheeran, 76 Justin Bieber, 91 Rihanna, 33 Taylor Swift, 42
+08/26/2023 11:46:34 PrintAmount 717
+08/26/2023 11:51:16 PrintAll
+08/26/2023 11:55:12 PrintAmount 717
+08/26/2023 11:55:12 PrintAll A, 5 AA, 90 AB, 1 AB, 80 AC, 1 AD, 6 Adele, 24 Ariana Grande, 65 B, 8 BB, 2 Beyoncé, 18 Billie Eilish, 10 Bruno Mars, 58 C, 10 CA, 10 Drake, 87 Ed Sheeran, 76 Justin Bieber, 91 Rihanna, 33 Taylor Swift, 42
+08/27/2023 08:31:17
+08/27/2023 08:31:18
+08/27/2023 08:37:33
+08/27/2023 08:37:35
+08/27/2023 08:38:08   
+08/27/2023 08:38:09   
+08/27/2023 08:39:21 PrintAmount 717
+08/27/2023 08:39:22 PrintAll A, 5 AA, 90 AB, 1 AB, 80 AC, 1 AD, 6 Adele, 24 Ariana Grande, 65 B, 8 BB, 2 Beyoncé, 18 Billie Eilish, 10 Bruno Mars, 58 C, 10 CA, 10 Drake, 87 Ed Sheeran, 76 Justin Bieber, 91 Rihanna, 33 Taylor Swift, 42
+27/08/2023 08:50:37 search success 
+27/08/2023 08:52:02 search success 
+08/27/2023 08:52:44 PrintAll A, 5 AA, 90 AB, 1 AB, 80 AC, 1 AD, 6 Adele, 24 Ariana Grande, 65 B, 8 BB, 2 Beyoncé, 18 Billie Eilish, 10 Bruno Mars, 58 C, 10 CA, 10 Drake, 87 Ed Sheeran, 76 Justin Bieber, 91 Rihanna, 33 Taylor Swift, 42
+08/27/2023 08:52:45 PrintAmount 717
+08/27/2023 08:54:00 PrintAll A, 5 AA, 90 AB, 1 AB, 80 AC, 1 AD, 6 Adele, 24 Ariana Grande, 65 B, 8 BB, 2 Beyoncé, 18 Billie Eilish, 10 Bruno Mars, 58 C, 10 CA, 10 Drake, 87 Ed Sheeran, 76 Justin Bieber, 91 Rihanna, 33 Taylor Swift, 42
+08/27/2023 08:54:01 PrintAmount 717
+Sun 27 Aug 2023 08:54:42 IDT: Record operation performed on 'records.txt' - Name: 'nadin', Amount: '80'
+08/27/2023 08:57:58 PrintAll A, 5 AA, 90 AB, 1 AB, 80 AC, 1 AD, 6 Adele, 24 Ariana Grande, 65 B, 8 BB, 2 Beyoncé, 18 Billie Eilish, 10 Bruno Mars, 58 C, 10 CA, 10 Drake, 87 Ed Sheeran, 76 Justin Bieber, 91 nadin,80 Rihanna, 33 Taylor Swift, 42
+08/27/2023 08:57:59 PrintAmount 797
+Sun 27 Aug 2023 08:58:09 IDT: Record operation performed on 'records.txt' - Name: 'records.txt', Amount: '8'
+27/08/2023 08:58:40 search success 

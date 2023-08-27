@@ -2,9 +2,13 @@
 
 source ./helpers.sh
 #source ./functions.sh
-
-main_menu() {
     echo "Welcome $USER!"
+    read -p "Please enter file name: " input_file
+     if [ ! -f "$input_file" ]; then
+        echo "Error: The file does not exist. Creating $input_file"
+        touch "$input_file"
+    fi
+main_menu() {
     echo "This is your personal record collection management app. How would you like to use it?"
     echo "1. Add Record"
     echo "2. Delete Record"
@@ -16,16 +20,41 @@ main_menu() {
     echo "8. Exit"
     read -p "Enter your choice (1-8): " choice
 }
+###########################################################
+# Function to add a record to a file
+add_record() {
+    local input_file="$1"
+    local name="$2"
+    local amount="$3"
 
-input_file() {
-    read -p "Enter file name: " file
-    if [ -f "$file" ]; then
-        echo "$file"
+
+    # Check if the name already exists in the file
+    if grep -q "^$name," "$input_file"; then
+        # If the name exists, update the amount by adding the new amount
+        currentAmount=$(grep "^$name," "$input_file" | cut -d ',' -f 2)
+        newAmount=$((currentAmount + amount))
+        sed -i "s/^$name,.*/$name,$newAmount/" "$input_file"
+        echo "Record updated successfully in '$input_file'."
     else
-        echo "file not found."
-        touch "$file"
+        # If the name doesn't exist, add it to the end of the file
+        echo "$name,$amount" >> "$input_file"
+        echo "Record added successfully to '$input_file'."
     fi
+
+    # Log the event
+    echo "$(date): Record operation performed on '$input_file' - Name: '$name', Amount: '$amount'" >> logfile.txt
 }
+
+# Example usage:
+# Get input from the user for the name, and amount
+
+
+#read -p "Enter the name of the record: " name
+#read -p "Enter the amount: " amount
+
+# Call the function to add or update the record
+#addecord "$name" "$amount"
+########################################################
 
 search_main(){
    input_file
@@ -47,11 +76,52 @@ write_to_log
 
 }
 
+update_quantity(){
+ searcher
+
+  rec_quan=$(echo "$selected_line" | cut -d ',' -f 2)
+ if [[ $rec_quan -ge 1 ]]; then 
+   read -p "Enter number you want to update " replacement
+
+   rec_name=$(echo "$selected_line" | cut -d ',' -f 1)
+    
+    sed -i "s/$rec_name,[0-9]*/$rec_name,$replacement/g" $file
+    update_log 'update_quantity' $replacement
+ 
+
+ else 
+    echo "record amount is less than 1 !! "
+    flag=0
+    update_log 'update_quantity' 
+    
+ fi   
+ 
+
+}
+
+update_name(){
+ 
+ searcher
+ if [[ $flag -eq 1 ]]; then
+ read -p "Enter a string to replace: " replacement
+
+ rec_name=$(echo "$selected_line" | cut -d ',' -f 1)
+ sed -i "s/$rec_name/$replacement/g" "$file"
+ update_log 'update_name' "$replacement"
+
+ else 
+ flag=0
+ update_log 'update_name' 
+ fi
+}
+
 write_to_log() {
-    local event="$1"
-    local result="$2"
     local timestamp=$(date +"%m/%d/%Y %T")
-    echo "$timestamp $event $result" >> logfile.txt
+	if [[ $flag -eq 1 ]]; then
+    echo "$timestamp PrintAmount" $total_records >> logfile.txt
+	else
+    echo "$timestamp PrintAll" $sorted_records >> logfile.txt
+fi
 }
 
 
@@ -65,32 +135,36 @@ display_records() {
 
 #function to display total records
 display_records_sum() {
+    flag=1
     total_records=$(awk -F, '{sum+=$2} END {print sum}' "records.txt")
     if [ -s "records.txt" ]; then
     	echo "Total records: $total_records"
-    	write_to_log "PrintAmount" $total_records
     else
    	echo "No records to display, please add and try again."
-   	write_to_log "PrintAmount" $total_records
     fi
+    	write_to_log
 }
 
 #function to display content of file in abc sorting
 print_sorted_records() {
-    sorted_content=$(sort "records.txt")
+    flag=0
+    sorted_records=$(sort records.txt)
     if [ -s "records.txt" ]; then
-        sort records.txt
-        write_to_log "PrintAll" $sorted_content
+        #sort records.txt
+        echo "$sorted_records"
     else
         echo "No records to display, please add and try again."
-        write_to_log "PrintAll" $sorted_content
     fi
+        write_to_log
 }
 
 while true; do
     main_menu
     case $choice in
-        1) add_record ;;
+    	1)
+    	read -p "Enter the name of the record: " name
+        read -p "Enter the amount: " amount  
+        add_record "$input_file" "$name" "$amount";;
         2) delete_record ;;
         3) search_main ;;
         4) update_name ;;
@@ -101,4 +175,3 @@ while true; do
         *) echo "Invalid choice. Please select 1-8." ;;
     esac
 done
-

@@ -1,0 +1,20 @@
+A, 5
+AA, 90
+AB, 1
+AB, 80
+AC, 1
+AD, 6
+Adele, 24
+Ariana Grande, 65
+B, 8
+BB, 2
+Beyoncé, 18
+Billie Eilish, 10
+Bruno Mars, 58
+C, 10
+CA, 10
+Drake, 87
+Ed Sheeran, 76
+Justin Bieber, 91
+Rihanna, 33
+Taylor Swift, 42

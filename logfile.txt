@@ -1,22 +1,26 @@
-
-27/08/2023 01:52:12 PrintAll dark side of the moon,17
-27/08/2023 01:52:12 PrintAll yellow rectangle,5
-27/08/2023 01:52:12 PrintAll into the dark,5
-27/08/2023 01:52:12 PrintAll kattey perry,3
-27/08/2023 01:52:12 PrintAll dark aaa,22
-27/08/2023 01:52:12 PrintAll visit the dark,8
-27/08/2023 01:52:12 PrintAll favorite white,0
-27/08/2023 01:52:55 PrintAll dark side of the moon,17
-27/08/2023 01:52:55 PrintAll yellow rectangle,5
-27/08/2023 01:52:55 PrintAll into the dark,5
-27/08/2023 01:52:55 PrintAll kattey perry,3
-27/08/2023 01:52:55 PrintAll dark aaa,22
-27/08/2023 01:52:55 PrintAll visit the dark,8
-27/08/2023 01:52:55 PrintAll favorite white,0
-27/08/2023 01:52:57 PrintAll dark side of the moon,17
-27/08/2023 01:52:57 PrintAll yellow rectangle,5
-27/08/2023 01:52:57 PrintAll into the dark,5
-27/08/2023 01:52:57 PrintAll kattey perry,3
-27/08/2023 01:52:57 PrintAll dark aaa,22
-27/08/2023 01:52:57 PrintAll visit the dark,8
-27/08/2023 01:52:57 PrintAll favorite white,0
+27/08/2023 10:02:16 PrintAll dark side of the moon,17
+27/08/2023 10:02:16 PrintAll yellow rectangle,5
+27/08/2023 10:02:16 PrintAll into the dark,5
+27/08/2023 10:02:16 PrintAll kattey perry,3
+27/08/2023 10:02:16 PrintAll dark aaa,22
+27/08/2023 10:02:16 PrintAll visit the dark,8
+27/08/2023 10:02:16 PrintAll favorite white,0
+27/08/2023 10:02:26 PrintAmount 60
+27/08/2023 10:02:50 search success
+27/08/2023 10:03:03 Insert success
+27/08/2023 10:03:56 search failed 
+27/08/2023 10:04:05 Insert success
+27/08/2023 10:05:20 search failed 
+27/08/2023 10:05:22 Insert success
+27/08/2023 10:06:59 search failed 
+27/08/2023 10:07:00 Insert success
+27/08/2023 10:07:26 search failed 
+27/08/2023 10:07:28 Insert success
+27/08/2023 10:08:48 search failed 
+27/08/2023 10:08:50 Insert success
+27/08/2023 10:09:46 search failed 
+27/08/2023 10:09:47 Insert success
+27/08/2023 10:10:49 search failed 
+27/08/2023 10:10:49 Insert success
+27/08/2023 10:11:41 search failed 
+27/08/2023 10:11:42 Insert success

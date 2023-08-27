@@ -62,9 +62,10 @@ done < find.txt
 }
 
 is_file_empty(){
-#if find.txt is empty add the name of the new record to the end of the file 
+#if find.txt is empty add the name of the new record to the end of the file
 if ! [[ -s find.txt ]];then
       echo $str,$requested_amount >> records.txt
+      echo "the record was updated"
       flag=1
 fi
 

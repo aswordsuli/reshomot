@@ -73,8 +73,8 @@ echo -n > find.txt
 add_record(){
 search_main
 file_to_array
+read -p "enter number of records: " requested_amount 
 is_file_empty
-read -p "enter number of records: " requested_amount
 select opt in "${options[@]}"
 do
 if [ "$opt" ];then
@@ -174,7 +174,7 @@ update_log "PrintAll"
 
 
 #delete_record
-#add_record
+add_record
 #update_name
 #update_quantity
 #display_total_quantity

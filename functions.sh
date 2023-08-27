@@ -178,3 +178,4 @@ update_log "PrintAll"
 #update_name
 #update_quantity
 #display_total_quantity
+display_records

@@ -174,7 +174,7 @@ update_log "PrintAll"
 
 
 #delete_record
-add_record
+#add_record
 #update_name
 #update_quantity
 #display_total_quantity
